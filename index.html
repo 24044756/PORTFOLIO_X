@@ -3,121 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiyiselani Rabopape's Portfolio</title>
+    <title>TIYISELANI RABOPAPE | Computer Science Student &amp; Aspiring Software Developer</title>
+    <meta name="description" content="Portfolio of TIYISELANI RABOPAPE, a Computer Science student at the University of Venda building software in Java and C++.">
+    <meta name="theme-color" content="#0b0c12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="nav__logo" href="#home" aria-label="TIYISELANI RABOPAPE, back to top">
+                <span class="nav__logo-mark" aria-hidden="true">RT</span>
+                <span class="nav__logo-text">TIYISELANI RABOPAPE</span>
+            </a>
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a class="nav__link" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#skills">Skills</a></li>
+                <li><a class="nav__link" href="#projects">Projects</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home" aria-labelledby="home-title">
-            <h1 id="home-title">Curious. Driven. Building the future in tech.</h1>
-            <p>
-                Welcome to my personal portfolio. My name is Tiyiselani Rabopape, a Computer Science student passionate about coding and technology.
-            </p>
-            <hr>
-            <h2>BIO:</h2>
-            <p>
-                I am a curious and driven Computer Science student with a passion for coding and solving problems. I enjoy building things with technology and constantly improving my skills in Java, C++, and beyond. My goal? To turn ideas into real solutions that make a difference.
-            </p>
-            <img src="senepe.jpg" alt="Tiyiselani's profile picture" height="200">
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="home-title">
+            <div class="hero__bg" aria-hidden="true">
+                <span class="hero__orb hero__orb--one"></span>
+                <span class="hero__orb hero__orb--two"></span>
+                <span class="hero__grid"></span>
+            </div>
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <p class="status-badge"><span class="status-badge__dot" aria-hidden="true"></span>Open to internships and junior opportunities</p>
+                    <h1 class="hero__title" id="home-title">TIYISELANI RABOPAPE</h1>
+                    <p class="hero__headline">Building ideas into digital solutions.</p>
+                    <p class="hero__typing"><span class="visually-hidden">Computer Science Student, Aspiring Software Developer, Java and C++ Programmer, Problem Solver.</span><span class="hero__typed" id="typed-text" aria-hidden="true"></span><span class="hero__caret" aria-hidden="true"></span></p>
+                    <p class="hero__intro">I'm a curious, driven Computer Science student at the University of Venda. I like building practical applications and sharpening my skills in programming, algorithms and problem solving.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#projects">Explore my work</a>
+                        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+                <div class="hero__media">
+                    <div class="hero__frame">
+                        <img class="hero__photo" src="senepe.jpeg" alt="Portrait of  TIYISELANI RABOPAPE" width="400" height="400">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="about" aria-labelledby="about-title">
-            <h2 id="about-title">About Me</h2>
-            <ul>
-                <li><strong>Academic Background:</strong> Computer Science student with strong programming skills in Java and currently learning C++.</li>
-                <li><strong>Skills/Tools:</strong> Java (main), C++ (learning), strong in logic and algorithms.</li>
-                <li><strong>Goals:</strong> To build a career in the tech industry focusing on software development and systems programming. Mastering multiple programming languages and advanced computer science topics.</li>
-            </ul>
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section__head reveal">
+                    <h2 class="section__title" id="about-title">About me</h2>
+                    <p class="section__lead">I'm a Computer Science student who enjoys turning ideas into working software, and I keep improving by building real projects.</p>
+                </header>
+                <div class="card-grid card-grid--three">
+                    <article class="info-card reveal">
+                        <i class="fa-solid fa-graduation-cap info-card__icon" aria-hidden="true"></i>
+                        <h3 class="info-card__title">Education</h3>
+                        <p class="info-card__text">Studying Computer Science at the University of Venda.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <i class="fa-solid fa-code info-card__icon" aria-hidden="true"></i>
+                        <h3 class="info-card__title">What I build</h3>
+                        <p class="info-card__text">Console applications, games and graphics programs in Java and C++, using object-oriented design.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <i class="fa-solid fa-puzzle-piece info-card__icon" aria-hidden="true"></i>
+                        <h3 class="info-card__title">How I think</h3>
+                        <p class="info-card__text">I enjoy algorithms and breaking problems into clear logic that I can test and improve.</p>
+                    </article>
+                </div>
+                <p class="about__goal reveal">My goal is a career in software development and systems programming, mastering multiple languages and advanced computer science topics along the way.</p>
+            </div>
         </section>
 
-        <section id="projects" aria-labelledby="projects-title">
-            <h2 id="projects-title">Projects</h2>
-
-            <article class="project">
-                <h3>Student Performance Tracker (Java)</h3>
-                <p>
-                    A Java-based console application that allows users to input student marks and calculates their performance.
-                    The program determines averages, assigns grades, and gives feedback based on performance.
-                    It uses object-oriented principles like classes and methods to manage student data efficiently.
-                </p>
-                <ul>
-                    <li>Input multiple students and their marks</li>
-                    <li>Calculate average per student</li>
-                    <li>Grade assignment (A, B, C, etc.)</li>
-                    <li>Summary report of class performance</li>
-                </ul>
-                <p><strong>Tools Used:</strong> NetBeans IDE 8.2 (for running Java programs)</p>
-                <p>
-                    <a href="https://github.com/24044756/StudentPerformanceTracker" target="_blank">GitHub Repository</a>
-                </p>
-            </article>
-
-            <article class="project">
-                <h3>Sudoku Game (C++)</h3>
-                <p>
-                    A terminal-based Sudoku game built in C++ that allows users to play, solve, and check puzzles.
-                    The program uses 2D arrays to represent the game board and includes logic to validate moves and ensure rules are followed.
-                    Great for practicing object-oriented programming and algorithm implementation.
-                </p>
-                <ul>
-                    <li>Generate and display a Sudoku grid</li>
-                    <li>User input for playing the game</li>
-                    <li>Validates moves based on Sudoku rules</li>
-                    <li>Option to solve or reset the board</li>
-                </ul>
-                <p><strong>Tools Used:</strong> Code::Blocks</p>
-                <p>
-                    <a href="https://github.com/24044756/SudokuGame.git" target="_blank">GitHub Repository</a>
-                </p>
-            </article>
-
-            <article class="project">
-                <h3>RosePanel (Java)</h3>
-                <p>
-                    RosePanel is a Java Swing project that visually displays a beautiful rose using custom graphics.
-                    It uses Java Graphics and Graphics2D libraries to draw the rose pattern programmatically.
-                    The project focuses on GUI rendering, coordinate plotting, and color styling to create an artistic visual effect.
-                </p>
-                <ul>
-                    <li>Draws a symmetrical rose using Java graphics</li>
-                    <li>Demonstrates use of loops, math functions (like sine and cosine), and colors</li>
-                    <li>Simple, visually appealing output</li>
-                    <li>Great introduction to 2D graphics in Java</li>
-                </ul>
-                <p><strong>Tools Used:</strong> NetBeans IDE 8.2</p>
-                <p>
-                    <a href="https://github.com/24044756/ROSEPANEL" target="_blank">GitHub Repository</a>
-                </p>
-            </article>
+        <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section__head reveal">
+                    <h2 class="section__title" id="skills-title">Skills</h2>
+                    <p class="section__lead">The languages and concepts I work with. Levels describe how I use each one, not a score.</p>
+                </header>
+                <div class="card-grid card-grid--three">
+                    <article class="skill-card reveal">
+                        <h3 class="skill-card__title"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Programming languages</h3>
+                        <ul class="skill-list">
+                            <li class="skill-list__item"><span>Java</span><span class="skill-level skill-level--main">Main language</span></li>
+                            <li class="skill-list__item"><span>C++</span><span class="skill-level skill-level--learning">Learning and building</span></li>
+                            <li class="skill-list__item"><span>SQL</span><span class="skill-level">Database queries</span></li>
+                            <li class="skill-list__item"><span>JavaScript</span><span class="skill-level">Web interactivity</span></li>
+                        </ul>
+                    </article>
+                    <article class="skill-card reveal">
+                        <h3 class="skill-card__title"><i class="fa-solid fa-globe" aria-hidden="true"></i> Web fundamentals</h3>
+                        <ul class="skill-list">
+                            <li class="skill-list__item"><span>HTML</span><span class="skill-level">Structure</span></li>
+                            <li class="skill-list__item"><span>CSS</span><span class="skill-level">Styling and layout</span></li>
+                            <li class="skill-list__item"><span>JavaScript</span><span class="skill-level">Behaviour</span></li>
+                        </ul>
+                    </article>
+                    <article class="skill-card reveal">
+                        <h3 class="skill-card__title"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Computer science core</h3>
+                        <ul class="skill-list">
+                            <li class="skill-list__item"><span>Object-oriented programming</span></li>
+                            <li class="skill-list__item"><span>Data structures and algorithms</span></li>
+                            <li class="skill-list__item"><span>Problem solving</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title">Contact</h2>
-            <p>Email: 
-                <a href="mailto:tiyiselaniqueentonrabopape@gmail.com">tiyiselaniqueentonrabopape@gmail.com</a> or 
-                <a href="mailto:24044756@mvula.univen.ac.za">24044756@mvula.univen.ac.za</a>
-            </p>
-            <p>
-                View my github profile for more repositories consisting of more awesome projects
-                <a href="https://github.com/24044756" target="_blank" rel="noopener noreferrer">GitHub Profile</a> |
-         
-            </p>
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <header class="section__head reveal">
+                    <h2 class="section__title" id="projects-title">Projects</h2>
+                    <p class="section__lead">Three projects that show how I apply what I learn. Each links to its full source code on GitHub.</p>
+                </header>
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-card__media" role="img" aria-label="Screenshot of Student Performance Tracker coming soon">
+                            <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+                            <span>Screenshot coming soon</span>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Student Performance Tracker</h3>
+                            <p class="project-card__text">A Java console application that lets users enter student marks, calculate averages, assign grades and generate class performance summaries.</p>
+                            <ul class="tag-list" aria-label="Technologies used">
+                                <li class="tag">Java</li>
+                                <li class="tag">Object-oriented programming</li>
+                                <li class="tag">NetBeans</li>
+                            </ul>
+                            <a class="project-card__link" href="https://github.com/24044756/StudentPerformanceTracker" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (Student Performance Tracker, opens in a new tab)</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-card__media" role="img" aria-label="Screenshot of Sudoku Game coming soon">
+                            <i class="fa-solid fa-table-cells" aria-hidden="true"></i>
+                            <span>Screenshot coming soon</span>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Sudoku Game</h3>
+                            <p class="project-card__text">A terminal-based Sudoku game in C++ that uses 2D arrays, validates moves against Sudoku rules, and can solve or reset the board.</p>
+                            <ul class="tag-list" aria-label="Technologies used">
+                                <li class="tag">C++</li>
+                                <li class="tag">2D arrays</li>
+                                <li class="tag">Code::Blocks</li>
+                            </ul>
+                            <a class="project-card__link" href="https://github.com/24044756/SudokuGame.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (Sudoku Game, opens in a new tab)</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-card__media" role="img" aria-label="Screenshot of RosePanel coming soon">
+                            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                            <span>Screenshot coming soon</span>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">RosePanel</h3>
+                            <p class="project-card__text">A Java Swing project that draws a rose with Graphics and Graphics2D, using mathematical calculations, loops and coordinate plotting.</p>
+                            <ul class="tag-list" aria-label="Technologies used">
+                                <li class="tag">Java</li>
+                                <li class="tag">Java Swing</li>
+                                <li class="tag">Graphics2D</li>
+                                <li class="tag">NetBeans</li>
+                            </ul>
+                            <a class="project-card__link" href="https://github.com/24044756/ROSEPANEL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (RosePanel, opens in a new tab)</span></a>
+                        </div>
+                    </article>
+                </div>
+                <p class="projects__more reveal">Want to see more? Browse all my repositories on <a href="https://github.com/24044756" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section__head reveal">
+                    <h2 class="section__title" id="contact-title">Get in touch</h2>
+                    <p class="section__lead">Have an opportunity or a question? Send me a message.</p>
+                </header>
+                <div class="contact reveal">
+                    <ul class="contact__list">
+                        <li><a class="contact__item" href="mailto:tiyiselaniqueentonrabopape@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span><strong>Personal email</strong><br>tiyiselaniqueentonrabopape@gmail.com</span></a></li>
+                        <li><a class="contact__item" href="mailto:24044756@mvula.univen.ac.za"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><span><strong>Student email</strong><br>24044756@mvula.univen.ac.za</span></a></li>
+                        <li><a class="contact__item" href="https://github.com/24044756" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span><strong>GitHub</strong><br>github.com/24044756<span class="visually-hidden"> (opens in a new tab)</span></span></a></li>
+                        <li><a class="contact__item" href="tel:+27636263341"><i class="fa-solid fa-phone" aria-hidden="true"></i><span><strong>Phone</strong><br>063 626 3341</span></a></li>
+                    </ul>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-field">
+                            <label class="form-field__label" for="contact-name">Name</label>
+                            <input class="form-field__input" id="contact-name" name="name" type="text" autocomplete="name" required aria-describedby="contact-name-error">
+                            <p class="form-field__error" id="contact-name-error" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field__label" for="contact-email">Your email</label>
+                            <input class="form-field__input" id="contact-email" name="email" type="email" autocomplete="email" required aria-describedby="contact-email-error">
+                            <p class="form-field__error" id="contact-email-error" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field__label" for="contact-subject">Subject <span class="form-field__optional">(optional)</span></label>
+                            <input class="form-field__input" id="contact-subject" name="subject" type="text">
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field__label" for="contact-message">Message</label>
+                            <textarea class="form-field__input form-field__input--area" id="contact-message" name="message" rows="5" required aria-describedby="contact-message-error"></textarea>
+                            <p class="form-field__error" id="contact-message-error" role="alert"></p>
+                        </div>
+                        <button class="btn btn--primary" type="submit">Compose email</button>
+                        <p class="form-note">This site has no server. Submitting opens your email app with the message filled in. Nothing is sent until you press Send there.</p>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Tiyiselani. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__text">&copy; <span id="year">2026</span>  TIYISELANI RABOPAPE. All rights reserved.</p>
+            <ul class="social-list" aria-label="Social links">
+                <li><a class="social-list__link" href="https://github.com/24044756" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                <li><a class="social-list__link" href="mailto:tiyiselaniqueentonrabopape@gmail.com" aria-label="Email TIYISELANI RABOPAPE"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
     </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
