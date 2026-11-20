@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIYISELANI RABOPAPE | Computer Science Student &amp; Aspiring Software Developer</title>
-    <meta name="description" content="Portfolio of TIYISELANI RABOPAPE, a Computer Science student at the University of Venda building software in Java and C++.">
-    <meta name="theme-color" content="#0b0c12">
+    <title>TIYISELANI RABOPAPE | Computer Science &amp; Mathematics Student, Developer and Tutor</title>
+    <meta name="description" content="Portfolio of TIYISELANI RABOPAPE, a Computer Science and Mathematics student at the University of Venda, software developer and founder of Quinton Tutorials.">
+    <meta name="author" content="TIYISELANI RABOPAPE">
+    <meta name="theme-color" content="#060814">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TIYISELANI RABOPAPE | Computer Science &amp; Mathematics Student">
+    <meta property="og:description" content="Building intelligence through code and mathematics. Software projects and Quinton Tutorials academic support.">
+    <meta property="og:image" content="senepe.jpeg">
+    <meta name="twitter:card" content="summary">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
 
     <header class="site-header" id="site-header">
         <nav class="nav" aria-label="Main navigation">
-            <a class="nav__logo" href="#home" aria-label="TIYISELANI RABOPAPE, back to top">
-                <span class="nav__logo-mark" aria-hidden="true">RT</span>
-                <span class="nav__logo-text">TIYISELANI RABOPAPE</span>
+            <a class="nav__logo" href="#home" aria-label="TIYISELANI , back to top">
+                <span class="nav__logo-mark" aria-hidden="true">TQ</span>
+                <span class="nav__logo-text">TIYISELANI QUEENTON</span>
             </a>
             <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-                <span class="nav__toggle-bar"></span>
-                <span class="nav__toggle-bar"></span>
-                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
             </button>
             <ul class="nav__menu" id="nav-menu">
                 <li><a class="nav__link" href="#home">Home</a></li>
                 <li><a class="nav__link" href="#about">About</a></li>
                 <li><a class="nav__link" href="#skills">Skills</a></li>
+                <li><a class="nav__link" href="#education">Education</a></li>
+                <li><a class="nav__link" href="#tutoring">Tutoring</a></li>
                 <li><a class="nav__link" href="#projects">Projects</a></li>
                 <li><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
@@ -38,192 +45,434 @@
     </header>
 
     <main id="main">
+        <!-- HERO -->
         <section class="hero" id="home" aria-labelledby="home-title">
+            <canvas class="hero__particles" id="particles" aria-hidden="true"></canvas>
             <div class="hero__bg" aria-hidden="true">
-                <span class="hero__orb hero__orb--one"></span>
-                <span class="hero__orb hero__orb--two"></span>
+                <span class="hero__orb hero__orb--one" data-parallax="0.12"></span>
+                <span class="hero__orb hero__orb--two" data-parallax="-0.08"></span>
                 <span class="hero__grid"></span>
+                <span class="hero__symbol hero__symbol--1" data-parallax="0.2">&int;</span>
+                <span class="hero__symbol hero__symbol--2" data-parallax="-0.15">&pi;</span>
+                <span class="hero__symbol hero__symbol--3" data-parallax="0.1">&sum;</span>
+                <span class="hero__symbol hero__symbol--4" data-parallax="-0.2">&infin;</span>
+                <span class="hero__symbol hero__symbol--5" data-parallax="0.16">&radic;</span>
             </div>
             <div class="container hero__inner">
                 <div class="hero__content">
-                    <p class="status-badge"><span class="status-badge__dot" aria-hidden="true"></span>Open to internships and junior opportunities</p>
-                    <h1 class="hero__title" id="home-title">TIYISELANI RABOPAPE</h1>
-                    <p class="hero__headline">Building ideas into digital solutions.</p>
-                    <p class="hero__typing"><span class="visually-hidden">Computer Science Student, Aspiring Software Developer, Java and C++ Programmer, Problem Solver.</span><span class="hero__typed" id="typed-text" aria-hidden="true"></span><span class="hero__caret" aria-hidden="true"></span></p>
-                    <p class="hero__intro">I'm a curious, driven Computer Science student at the University of Venda. I like building practical applications and sharpening my skills in programming, algorithms and problem solving.</p>
-                    <div class="hero__actions">
-                        <a class="btn btn--primary" href="#projects">Explore my work</a>
-                        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+                    <p class="status-badge hero-anim"><span class="status-badge__dot" aria-hidden="true"></span>Open to opportunities</p>
+                    <p class="hero__name hero-anim">TIYISELANI RABOPAPE</p>
+                    <h1 class="hero__title hero-anim" id="home-title">Building Intelligence Through <span class="hero__title-accent">Code &amp; Mathematics.</span></h1>
+                    <p class="hero__subtitle hero-anim">Computer Science. Mathematics. Innovation.</p>
+                    <p class="hero__typing hero-anim"><span class="visually-hidden">Computer Science Student, Mathematics Student, Aspiring Software Developer, Mathematics Tutor, Problem Solver.</span><span class="hero__prompt" aria-hidden="true">&gt;</span> <span class="hero__typed" id="typed-text" aria-hidden="true"></span><span class="hero__caret" aria-hidden="true"></span></p>
+                    <p class="hero__intro hero-anim">I am TIYISELANI RABOPAPE, a Computer Science and Mathematics student at the University of Venda, passionate about software development, mathematical problem solving, algorithms and building technology driven solutions.</p>
+                    <div class="hero__actions hero-anim">
+                        <a class="btn btn--primary" href="#projects"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Explore My Projects</a>
+                        <a class="btn btn--ghost" href="#skills"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Explore My Skills</a>
+                        <!-- Remove the "hidden" attribute once cv.pdf is placed next to this file. -->
+                        <a class="btn btn--ghost" id="download-cv" href="cv.pdf" download hidden><i class="fa-solid fa-download" aria-hidden="true"></i> Download CV</a>
                     </div>
                 </div>
-                <div class="hero__media">
-                    <div class="hero__frame">
-                        <img class="hero__photo" src="senepe.jpeg" alt="Portrait of  TIYISELANI RABOPAPE" width="400" height="400">
+                <div class="hero__media hero-anim">
+                    <div class="hero__portrait">
+                        <span class="hero__ring" aria-hidden="true"></span>
+                        <img class="hero__photo" src="senepe.jpeg" alt="Portrait of TIYISELANI RABOPAPE" width="400" height="400">
+                        <span class="hero__chip hero__chip--1" aria-hidden="true">Java</span>
+                        <span class="hero__chip hero__chip--2" aria-hidden="true">C++</span>
+                        <span class="hero__chip hero__chip--3" aria-hidden="true">&int; f(x) dx</span>
                     </div>
                 </div>
             </div>
+            <a class="hero__scroll" href="#about" aria-label="Scroll to About section"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
         </section>
 
+        <!-- ABOUT -->
         <section class="section" id="about" aria-labelledby="about-title">
             <div class="container">
                 <header class="section__head reveal">
+                    <p class="section__index">01 / about</p>
                     <h2 class="section__title" id="about-title">About me</h2>
-                    <p class="section__lead">I'm a Computer Science student who enjoys turning ideas into working software, and I keep improving by building real projects.</p>
                 </header>
+                <div class="about">
+                    <div class="about__text reveal">
+                        <p>I am a Computer Science and Mathematics student at the University of Venda with an interest in software development, mathematical modelling, algorithms, computational thinking and analytical problem-solving.</p>
+                        <p>My academic journey has allowed me to develop knowledge across programming, software engineering, computer systems, databases, calculus, numerical methods, mathematical analysis and abstract mathematical concepts.</p>
+                        <p>Beyond my academic studies, I enjoy helping other students understand challenging concepts through tutoring and academic support.</p>
+                        <p>I am continuously developing my technical abilities, expanding my mathematical knowledge and building practical solutions through programming.</p>
+                    </div>
+                    <ul class="identity-list reveal" aria-label="My identities">
+                        <li class="identity-card"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span>Computer Science student</span></li>
+                        <li class="identity-card"><i class="fa-solid fa-infinity" aria-hidden="true"></i><span>Mathematics student</span></li>
+                        <li class="identity-card"><i class="fa-solid fa-terminal" aria-hidden="true"></i><span>Programmer</span></li>
+                        <li class="identity-card"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i><span>University tutor</span></li>
+                        <li class="identity-card"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i><span>Problem solver</span></li>
+                    </ul>
+                </div>
                 <div class="card-grid card-grid--three">
-                    <article class="info-card reveal">
-                        <i class="fa-solid fa-graduation-cap info-card__icon" aria-hidden="true"></i>
-                        <h3 class="info-card__title">Education</h3>
-                        <p class="info-card__text">Studying Computer Science at the University of Venda.</p>
+                    <article class="glass-card reveal">
+                        <i class="glass-card__icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        <h3 class="glass-card__title">Studying</h3>
+                        <p class="glass-card__text">Computer Science and Mathematics at the University of Venda.</p>
                     </article>
-                    <article class="info-card reveal">
-                        <i class="fa-solid fa-code info-card__icon" aria-hidden="true"></i>
-                        <h3 class="info-card__title">What I build</h3>
-                        <p class="info-card__text">Console applications, games and graphics programs in Java and C++, using object-oriented design.</p>
+                    <article class="glass-card reveal">
+                        <i class="glass-card__icon fa-solid fa-code-branch" aria-hidden="true"></i>
+                        <h3 class="glass-card__title">Building</h3>
+                        <p class="glass-card__text">Practical programs in Java and C++, from console tools to graphics and games.</p>
                     </article>
-                    <article class="info-card reveal">
-                        <i class="fa-solid fa-puzzle-piece info-card__icon" aria-hidden="true"></i>
-                        <h3 class="info-card__title">How I think</h3>
-                        <p class="info-card__text">I enjoy algorithms and breaking problems into clear logic that I can test and improve.</p>
+                    <article class="glass-card reveal">
+                        <i class="glass-card__icon fa-solid fa-hands-holding-circle" aria-hidden="true"></i>
+                        <h3 class="glass-card__title">Teaching</h3>
+                        <p class="glass-card__text">Simplifying difficult concepts for other students through Quinton Tutorials.</p>
                     </article>
                 </div>
-                <p class="about__goal reveal">My goal is a career in software development and systems programming, mastering multiple languages and advanced computer science topics along the way.</p>
             </div>
         </section>
 
+        <!-- SKILLS -->
         <section class="section section--alt" id="skills" aria-labelledby="skills-title">
             <div class="container">
                 <header class="section__head reveal">
-                    <h2 class="section__title" id="skills-title">Skills</h2>
-                    <p class="section__lead">The languages and concepts I work with. Levels describe how I use each one, not a score.</p>
+                    <p class="section__index">02 / skills</p>
+                    <h2 class="section__title" id="skills-title">Technical skills</h2>
+                    <p class="section__lead">The tools, computing concepts and mathematics I work with, grouped by area.</p>
                 </header>
-                <div class="card-grid card-grid--three">
-                    <article class="skill-card reveal">
-                        <h3 class="skill-card__title"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Programming languages</h3>
-                        <ul class="skill-list">
-                            <li class="skill-list__item"><span>Java</span><span class="skill-level skill-level--main">Main language</span></li>
-                            <li class="skill-list__item"><span>C++</span><span class="skill-level skill-level--learning">Learning and building</span></li>
-                            <li class="skill-list__item"><span>SQL</span><span class="skill-level">Database queries</span></li>
-                            <li class="skill-list__item"><span>JavaScript</span><span class="skill-level">Web interactivity</span></li>
+                <div class="filter-bar reveal" role="group" aria-label="Filter skills by category">
+                    <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" type="button" data-filter="development" aria-pressed="false">Development</button>
+                    <button class="filter-btn" type="button" data-filter="computing" aria-pressed="false">Computing</button>
+                    <button class="filter-btn" type="button" data-filter="mathematics" aria-pressed="false">Mathematics</button>
+                </div>
+                <div class="card-grid card-grid--three skill-grid" id="skill-grid">
+                    <article class="skill-card reveal" data-category="development">
+                        <i class="skill-card__icon fa-solid fa-code" aria-hidden="true"></i>
+                        <h3 class="skill-card__title">Programming and development</h3>
+                        <p class="skill-card__text">Writing, structuring and debugging software across several languages.</p>
+                        <ul class="chip-list">
+                            <li class="chip"><i class="fa-brands fa-java" aria-hidden="true"></i> Java</li>
+<li class="chip"><i class="fa-solid fa-code" aria-hidden="true"></i> C++</li>
+<li class="chip"><i class="fa-brands fa-python" aria-hidden="true"></i> Python</li>
+<li class="chip"><i class="fa-solid fa-database" aria-hidden="true"></i> SQL</li>
+<li class="chip"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</li>
+<li class="chip"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</li>
+<li class="chip"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+<li class="chip"><i class="fa-solid fa-code" aria-hidden="true"></i> TypeScript</li>
+                            <li class="chip">Object-Oriented Programming</li>
+                            <li class="chip">Imperative Programming</li>
+                            <li class="chip">Software Development</li>
+                            <li class="chip">Debugging</li>
+                            <li class="chip">Programming Logic</li>
                         </ul>
                     </article>
-                    <article class="skill-card reveal">
-                        <h3 class="skill-card__title"><i class="fa-solid fa-globe" aria-hidden="true"></i> Web fundamentals</h3>
-                        <ul class="skill-list">
-                            <li class="skill-list__item"><span>HTML</span><span class="skill-level">Structure</span></li>
-                            <li class="skill-list__item"><span>CSS</span><span class="skill-level">Styling and layout</span></li>
-                            <li class="skill-list__item"><span>JavaScript</span><span class="skill-level">Behaviour</span></li>
+                    <article class="skill-card reveal" data-category="computing">
+                        <i class="skill-card__icon fa-solid fa-microchip" aria-hidden="true"></i>
+                        <h3 class="skill-card__title">Algorithms and computing</h3>
+                        <p class="skill-card__text">Understanding how software, systems and networks fit together.</p>
+                        <ul class="chip-list">
+                            <li class="chip">Data Structures</li>
+                            <li class="chip">Algorithms</li>
+                            <li class="chip">Computational Thinking</li>
+                            <li class="chip">Problem Solving</li>
+                            <li class="chip">Algorithm Design</li>
+                            <li class="chip">Operating Systems Fundamentals</li>
+                            <li class="chip">Computer Architecture</li>
+                            <li class="chip">Computer Systems</li>
+                            <li class="chip">Database Concepts</li>
+                            <li class="chip">Data Communication</li>
+                            <li class="chip">Computer Networking</li>
+                            <li class="chip">Software Engineering Principles</li>
                         </ul>
                     </article>
-                    <article class="skill-card reveal">
-                        <h3 class="skill-card__title"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Computer science core</h3>
-                        <ul class="skill-list">
-                            <li class="skill-list__item"><span>Object-oriented programming</span></li>
-                            <li class="skill-list__item"><span>Data structures and algorithms</span></li>
-                            <li class="skill-list__item"><span>Problem solving</span></li>
+                    <article class="skill-card reveal" data-category="mathematics">
+                        <i class="skill-card__icon fa-solid fa-square-root-variable" aria-hidden="true"></i>
+                        <h3 class="skill-card__title">Mathematical skills</h3>
+                        <p class="skill-card__text">Analytical and abstract mathematics, from calculus to graph theory.</p>
+                        <ul class="chip-list">
+                            <li class="chip">Differential Calculus</li>
+                            <li class="chip">Integral Calculus</li>
+                            <li class="chip">Multivariable Calculus</li>
+                            <li class="chip">Advanced Calculus</li>
+                            <li class="chip">Linear Algebra</li>
+                            <li class="chip">Numerical Analysis</li>
+                            <li class="chip">Real Analysis</li>
+                            <li class="chip">Ordinary Differential Equations</li>
+                            <li class="chip">Partial Differential Equations</li>
+                            <li class="chip">Mathematical Modelling</li>
+                            <li class="chip">Complex Analysis</li>
+                            <li class="chip">Group Theory</li>
+                            <li class="chip">Graph Theory</li>
+                            <li class="chip">Probability</li>
+                            <li class="chip">Statistics</li>
                         </ul>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- EDUCATION -->
+        <section class="section" id="education" aria-labelledby="education-title">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="section__index">03 / education</p>
+                    <h2 class="section__title" id="education-title">Academic journey</h2>
+                    <p class="section__lead">My studies at the University of Venda, with selected results below.</p>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <span class="timeline__dot" aria-hidden="true"></span>
+                        <div class="glass-card">
+                            <h3 class="glass-card__title">University of Venda</h3>
+                            <p class="glass-card__meta">Computer Science and Mathematics studies</p>
+                            <p class="glass-card__text">A combined path through programming, computer systems, databases, calculus, numerical methods and abstract mathematics.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__dot" aria-hidden="true"></span>
+                        <div class="glass-card">
+                            <h3 class="glass-card__title">Mathematics track</h3>
+                            <p class="glass-card__text">Calculus, linear algebra, analysis, differential equations, modelling, group theory, graph theory, statistics and probability.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__dot" aria-hidden="true"></span>
+                        <div class="glass-card">
+                            <h3 class="glass-card__title">Computer Science and IT track</h3>
+                            <p class="glass-card__text">Programming, operating systems, databases, algorithms, networks, computer architecture and software engineering.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__dot" aria-hidden="true"></span>
+                        <div class="glass-card">
+                            <h3 class="glass-card__title">Quinton Tutorials</h3>
+                            <p class="glass-card__text">Sharing what I learn by tutoring mathematics and computer science to university students.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="modules reveal">
+                    <div class="modules__head">
+                        <h3 class="modules__title">Modules from my studies</h3>
+                        <div class="modules__actions">
+                            <button class="btn btn--small btn--ghost" id="expand-all" type="button">Expand all</button>
+                            <button class="btn btn--small btn--ghost" id="collapse-all" type="button">Collapse all</button>
+                        </div>
+                    </div>
+                    <details class="module-group">
+                        <summary class="module-group__summary"><i class="fa-solid fa-square-root-variable" aria-hidden="true"></i> Mathematics modules</summary>
+                        <ul class="module-list">
+                            <li>Mathematics: Differential Calculus</li>
+                            <li>Integral Calculus</li>
+                            <li>Advanced Calculus</li>
+                            <li>Mathematics Modelling I</li>
+                            <li>Linear Algebra</li>
+                            <li>Mathematics Foundation II</li>
+                            <li>Numerical Analysis I</li>
+                            <li>Real Analysis I</li>
+                            <li>Real Analysis II</li>
+                            <li>Ordinary Differential Equations</li>
+                            <li>Partial Differential Equations</li>
+                            <li>Multivariable Calculus</li>
+                            <li>Complex Analysis</li>
+                            <li>Group Theory</li>
+                            <li>Graph Theory</li>
+                            <li>Introduction to Statistics</li>
+                            <li>Introduction to Probability</li>
+                        </ul>
+                    </details>
+                    <details class="module-group">
+                        <summary class="module-group__summary"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Computer Science and IT modules</summary>
+                        <ul class="module-list">
+                            <li>Computer Science Laboratory</li>
+                            <li>Imperative Programming</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Operating Systems</li>
+                            <li>Database Fundamentals</li>
+                            <li>Algorithms and Data Structures</li>
+                            <li>Data Communication and Computer Networks</li>
+                            <li>Introduction to Information Systems</li>
+                            <li>Introduction to Computer Systems</li>
+                            <li>Fundamentals of Computer Architecture</li>
+                            <li>Computer Technology</li>
+                            <li>Software Engineering</li>
+                            <li>Professional Computing and Information Technology</li>
+                            <li>Advanced Algorithms</li>
+                            <li>Database Design and Implementation</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="achievements">
+                    <header class="achievements__head reveal">
+                        <h3 class="achievements__title">Academic highlights</h3>
+                        <p class="achievements__note">Selected results only. Other modules are not shown here.</p>
+                    </header>
+                    <ul class="stat-grid">
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="93">93</span>%</span><span class="stat-card__label">Differential Calculus</span><span class="stat-card__bar" data-fill="93" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="90">90</span>%</span><span class="stat-card__label">Integral Calculus</span><span class="stat-card__bar" data-fill="90" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="85">85</span>%</span><span class="stat-card__label">Advanced Calculus</span><span class="stat-card__bar" data-fill="85" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="84">84</span>%</span><span class="stat-card__label">Ordinary Differential Equations</span><span class="stat-card__bar" data-fill="84" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="82">82</span>%</span><span class="stat-card__label">Operating Systems</span><span class="stat-card__bar" data-fill="82" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="80">80</span>%</span><span class="stat-card__label">Group Theory</span><span class="stat-card__bar" data-fill="80" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="82">82</span>%</span><span class="stat-card__label">Software Engineering</span><span class="stat-card__bar" data-fill="82" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="80">80</span>%</span><span class="stat-card__label">Database Fundamentals</span><span class="stat-card__bar" data-fill="80" aria-hidden="true"></span></li>
+                        <li class="stat-card reveal"><span class="stat-card__value"><span class="counter" data-target="76">76</span>%</span><span class="stat-card__label">Imperative Programming</span><span class="stat-card__bar" data-fill="76" aria-hidden="true"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TUTORING -->
+        <section class="section section--alt tutoring" id="tutoring" aria-labelledby="tutoring-title">
+            <div class="tutoring__formulas" aria-hidden="true">
+                <span class="formula formula--1" data-parallax="0.1">&int; f(x) dx</span>
+                <span class="formula formula--2" data-parallax="-0.12">d/dx [x&sup2;] = 2x</span>
+                <span class="formula formula--3" data-parallax="0.14">e<sup>i&pi;</sup> + 1 = 0</span>
+                <span class="formula formula--4" data-parallax="-0.1">&nabla;f</span>
+                <span class="formula formula--5" data-parallax="0.08">&sum; a<sub>n</sub></span>
+            </div>
+            <div class="container tutoring__inner">
+                <header class="section__head reveal">
+                    <p class="section__index">04 / tutoring</p>
+                    <h2 class="section__title tutoring__brand" id="tutoring-title">QUINTON TUTORIALS</h2>
+                    <p class="tutoring__subtitle">Making Complex Concepts Easier to Understand.</p>
+                    <p class="section__lead">Through Quinton Tutorials, I provide mathematics and computer science academic support to university students. My approach focuses on simplifying difficult concepts, developing problem solving abilities and preparing students for tests and examinations.</p>
+                    <div class="tutoring__cta">
+                        <a class="btn btn--primary" href="#contact"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Enquire About Tutorials</a>
+                        <a class="btn btn--whatsapp" href="https://wa.me/27636263341?text=Hello%20QUINTON%2C%20I%20am%20interested%20in%20your%20Quinton%20Tutorials.%20Please%20share%20more%20information." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Enquiry<span class="visually-hidden"> (opens in a new tab)</span></a>
+                    </div>
+                </header>
+
+                <div class="subject-grid">
+                    <article class="glass-card subject-card reveal">
+                        <h3 class="glass-card__title"><i class="fa-solid fa-square-root-variable" aria-hidden="true"></i> Mathematics tutoring</h3>
+                        <ul class="check-list">
+                            <li>Differential Calculus</li>
+                            <li>Integral Calculus</li>
+                            <li>Multivariable Calculus</li>
+                            <li>Numerical Analysis</li>
+                            <li>Advanced Calculus</li>
+                            <li>Linear Algebra</li>
+                            <li>Ordinary Differential Equations</li>
+                            <li>Statistics and Probability</li>
+                        </ul>
+                    </article>
+                    <article class="glass-card subject-card reveal">
+                        <h3 class="glass-card__title"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Computer Science academic support</h3>
+                        <ul class="check-list">
+                            <li>Imperative Programming</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Database Fundamentals</li>
+                            <li>Algorithms and Data Structures</li>
+                            <li>Introduction to Computer Systems</li>
+                            <li>Fundamentals of Computer Architecture</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <h3 class="tutoring__services-title reveal">Tutoring services</h3>
+                <ul class="service-grid">
+                    <li class="service-card reveal"><i class="fa-solid fa-user" aria-hidden="true"></i><h4>Individual tutoring</h4><p>One-on-one sessions at your pace.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-users" aria-hidden="true"></i><h4>Group tutoring</h4><p>Learn and practise together.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-square-root-variable" aria-hidden="true"></i><h4>Mathematics tutorials</h4><p>Clear explanations of core topics.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><h4>Computer Science academic support</h4><p>Help with concepts and coursework.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><h4>Test preparation</h4><p>Focused practice before tests.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-file-pen" aria-hidden="true"></i><h4>Examination preparation</h4><p>Revision plans for exam season.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-list-ol" aria-hidden="true"></i><h4>Step-by-step worked solutions</h4><p>See how each answer is reached.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-compass" aria-hidden="true"></i><h4>Assignment guidance</h4><p>Direction on how to approach tasks.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-code" aria-hidden="true"></i><h4>Programming assistance</h4><p>Support while you write code.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-bug" aria-hidden="true"></i><h4>Debugging and logical problem-solving</h4><p>Find and fix errors methodically.</p></li>
+                    <li class="service-card reveal"><i class="fa-solid fa-book-open" aria-hidden="true"></i><h4>Academic revision materials</h4><p>Notes and practice for revision.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
         <section class="section" id="projects" aria-labelledby="projects-title">
             <div class="container">
                 <header class="section__head reveal">
+                    <p class="section__index">05 / projects</p>
                     <h2 class="section__title" id="projects-title">Projects</h2>
-                    <p class="section__lead">Three projects that show how I apply what I learn. Each links to its full source code on GitHub.</p>
+                    <p class="section__lead">This are some of my selected programs that apply what I learn. Each links to its full source code on GitHub.All collection of the programs and applications that i've built are available here. on my Github repositories, link to Github is pasted on contacts. </p>
                 </header>
                 <div class="project-grid">
                     <article class="project-card reveal">
-                        <div class="project-card__media" role="img" aria-label="Screenshot of Student Performance Tracker coming soon">
-                            <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
-                            <span>Screenshot coming soon</span>
-                        </div>
+                        <div class="project-card__media" role="img" aria-label="Screenshot of Student Performance Tracker coming soon"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><span>Screenshot coming soon</span></div>
                         <div class="project-card__body">
                             <h3 class="project-card__title">Student Performance Tracker</h3>
-                            <p class="project-card__text">A Java console application that lets users enter student marks, calculate averages, assign grades and generate class performance summaries.</p>
-                            <ul class="tag-list" aria-label="Technologies used">
-                                <li class="tag">Java</li>
-                                <li class="tag">Object-oriented programming</li>
-                                <li class="tag">NetBeans</li>
+                            <ul class="tag-list" aria-label="Technologies used"><li class="tag">Java</li></ul>
+                            <p class="project-card__text">A Java-based console application that allows users to input student marks, calculate averages, assign grades and generate performance summaries.</p>
+                            <ul class="check-list check-list--small">
+                                <li>Multiple student records</li><li>Mark input</li><li>Average calculations</li><li>Grade assignment</li><li>Class performance summaries</li><li>Object-oriented programming principles</li>
                             </ul>
-                            <a class="project-card__link" href="https://github.com/24044756/StudentPerformanceTracker" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (Student Performance Tracker, opens in a new tab)</span></a>
+                            <a class="btn btn--small btn--ghost project-card__link" href="https://github.com/24044756/StudentPerformanceTracker" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (Student Performance Tracker, opens in a new tab)</span></a>
                         </div>
                     </article>
                     <article class="project-card reveal">
-                        <div class="project-card__media" role="img" aria-label="Screenshot of Sudoku Game coming soon">
-                            <i class="fa-solid fa-table-cells" aria-hidden="true"></i>
-                            <span>Screenshot coming soon</span>
-                        </div>
+                        <div class="project-card__media" role="img" aria-label="Screenshot of Sudoku Game coming soon"><i class="fa-solid fa-table-cells" aria-hidden="true"></i><span>Screenshot coming soon</span></div>
                         <div class="project-card__body">
                             <h3 class="project-card__title">Sudoku Game</h3>
-                            <p class="project-card__text">A terminal-based Sudoku game in C++ that uses 2D arrays, validates moves against Sudoku rules, and can solve or reset the board.</p>
-                            <ul class="tag-list" aria-label="Technologies used">
-                                <li class="tag">C++</li>
-                                <li class="tag">2D arrays</li>
-                                <li class="tag">Code::Blocks</li>
+                            <ul class="tag-list" aria-label="Technologies used"><li class="tag">C++</li></ul>
+                            <p class="project-card__text">A terminal-based Sudoku game using two-dimensional arrays, validation logic and algorithmic problem-solving.</p>
+                            <ul class="check-list check-list--small">
+                                <li>Sudoku grid representation</li><li>User input</li><li>Move validation</li><li>Sudoku rule checking</li><li>Solving and resetting functionality</li>
                             </ul>
-                            <a class="project-card__link" href="https://github.com/24044756/SudokuGame.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (Sudoku Game, opens in a new tab)</span></a>
+                            <a class="btn btn--small btn--ghost project-card__link" href="https://github.com/24044756/SudokuGame.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (Sudoku Game, opens in a new tab)</span></a>
                         </div>
                     </article>
                     <article class="project-card reveal">
-                        <div class="project-card__media" role="img" aria-label="Screenshot of RosePanel coming soon">
-                            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
-                            <span>Screenshot coming soon</span>
-                        </div>
+                        <div class="project-card__media" role="img" aria-label="Screenshot of RosePanel coming soon"><i class="fa-solid fa-seedling" aria-hidden="true"></i><span>Screenshot coming soon</span></div>
                         <div class="project-card__body">
                             <h3 class="project-card__title">RosePanel</h3>
-                            <p class="project-card__text">A Java Swing project that draws a rose with Graphics and Graphics2D, using mathematical calculations, loops and coordinate plotting.</p>
-                            <ul class="tag-list" aria-label="Technologies used">
-                                <li class="tag">Java</li>
-                                <li class="tag">Java Swing</li>
-                                <li class="tag">Graphics2D</li>
-                                <li class="tag">NetBeans</li>
+                            <ul class="tag-list" aria-label="Technologies used"><li class="tag">Java Swing</li></ul>
+                            <p class="project-card__text">A Java graphical application that uses Graphics and Graphics2D to draw a rose through mathematical calculations, loops and coordinate plotting.</p>
+                            <ul class="check-list check-list--small">
+                                <li>Custom graphics</li><li>Mathematical functions</li><li>Sine and cosine calculations</li><li>Graphical rendering</li><li>Colour styling</li>
                             </ul>
-                            <a class="project-card__link" href="https://github.com/24044756/ROSEPANEL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (RosePanel, opens in a new tab)</span></a>
+                            <a class="btn btn--small btn--ghost project-card__link" href="https://github.com/24044756/ROSEPANEL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub<span class="visually-hidden"> (RosePanel, opens in a new tab)</span></a>
                         </div>
                     </article>
                 </div>
-                <p class="projects__more reveal">Want to see more? Browse all my repositories on <a href="https://github.com/24044756" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
             </div>
         </section>
 
+        <!-- CONTACT -->
         <section class="section section--alt" id="contact" aria-labelledby="contact-title">
             <div class="container">
                 <header class="section__head reveal">
-                    <h2 class="section__title" id="contact-title">Get in touch</h2>
-                    <p class="section__lead">Have an opportunity or a question? Send me a message.</p>
+                    <p class="section__index">06 / contact</p>
+                    <h2 class="section__title" id="contact-title">Let's Build Something Great Together.</h2>
+                    <p class="section__lead">For opportunities, collaboration or tutoring, reach out through any channel below.</p>
                 </header>
                 <div class="contact reveal">
                     <ul class="contact__list">
                         <li><a class="contact__item" href="mailto:tiyiselaniqueentonrabopape@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span><strong>Personal email</strong><br>tiyiselaniqueentonrabopape@gmail.com</span></a></li>
-                        <li><a class="contact__item" href="mailto:24044756@mvula.univen.ac.za"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><span><strong>Student email</strong><br>24044756@mvula.univen.ac.za</span></a></li>
+                        <li><a class="contact__item" href="mailto:24044756@mvula.univen.ac.za"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><span><strong>University email</strong><br>24044756@mvula.univen.ac.za</span></a></li>
                         <li><a class="contact__item" href="https://github.com/24044756" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span><strong>GitHub</strong><br>github.com/24044756<span class="visually-hidden"> (opens in a new tab)</span></span></a></li>
-                        <li><a class="contact__item" href="tel:+27636263341"><i class="fa-solid fa-phone" aria-hidden="true"></i><span><strong>Phone</strong><br>063 626 3341</span></a></li>
+                        <li><a class="contact__item" href="https://wa.me/27636263341" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span><strong>WhatsApp</strong><br>063 626 3341<span class="visually-hidden"> (opens in a new tab)</span></span></a></li>
                     </ul>
                     <form class="contact-form" id="contact-form" novalidate>
                         <div class="form-field">
-                            <label class="form-field__label" for="contact-name">Name</label>
-                            <input class="form-field__input" id="contact-name" name="name" type="text" autocomplete="name" required aria-describedby="contact-name-error">
+                            <label class="form-field__label" for="contact-name">Full name</label>
+                            <input class="form-field__input" id="contact-name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="contact-name-error">
                             <p class="form-field__error" id="contact-name-error" role="alert"></p>
                         </div>
                         <div class="form-field">
-                            <label class="form-field__label" for="contact-email">Your email</label>
+                            <label class="form-field__label" for="contact-email">Email address</label>
                             <input class="form-field__input" id="contact-email" name="email" type="email" autocomplete="email" required aria-describedby="contact-email-error">
                             <p class="form-field__error" id="contact-email-error" role="alert"></p>
                         </div>
                         <div class="form-field">
-                            <label class="form-field__label" for="contact-subject">Subject <span class="form-field__optional">(optional)</span></label>
-                            <input class="form-field__input" id="contact-subject" name="subject" type="text">
+                            <label class="form-field__label" for="contact-subject">Subject</label>
+                            <input class="form-field__input" id="contact-subject" name="subject" type="text" required minlength="3" aria-describedby="contact-subject-error">
+                            <p class="form-field__error" id="contact-subject-error" role="alert"></p>
                         </div>
                         <div class="form-field">
                             <label class="form-field__label" for="contact-message">Message</label>
-                            <textarea class="form-field__input form-field__input--area" id="contact-message" name="message" rows="5" required aria-describedby="contact-message-error"></textarea>
+                            <textarea class="form-field__input form-field__input--area" id="contact-message" name="message" rows="5" required minlength="10" aria-describedby="contact-message-error"></textarea>
                             <p class="form-field__error" id="contact-message-error" role="alert"></p>
                         </div>
-                        <button class="btn btn--primary" type="submit">Compose email</button>
-                        <p class="form-note">This site has no server. Submitting opens your email app with the message filled in. Nothing is sent until you press Send there.</p>
-                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                        <button class="btn btn--primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Compose email</button>
+                    
                     </form>
                 </div>
             </div>
@@ -231,16 +480,49 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container site-footer__inner">
-            <p class="site-footer__text">&copy; <span id="year">2026</span>  TIYISELANI RABOPAPE. All rights reserved.</p>
+        <div class="container site-footer__grid">
+            <div class="site-footer__brand">
+                <p class="site-footer__name">TIYISELANI RABOPAPE</p>
+                <p class="site-footer__role">Computer Science and Mathematics Student</p>
+            </div>
+            <nav class="site-footer__nav" aria-label="Footer navigation">
+                <ul class="site-footer__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#tutoring">Tutoring</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <ul class="social-list" aria-label="Social links">
                 <li><a class="social-list__link" href="https://github.com/24044756" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
-                <li><a class="social-list__link" href="mailto:tiyiselaniqueentonrabopape@gmail.com" aria-label="Email TIYISELANI RABOPAPE"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a class="social-list__link" href="mailto:tiyiselaniqueentonrabopape@gmail.com" aria-label="Email TIYISELANI"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a class="social-list__link" href="https://wa.me/27636263341" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (opens in a new tab)"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
             </ul>
         </div>
+        <p class="site-footer__copy">&copy; <span id="year">2026</span> TIYISELANI RABOPAPE. All rights reserved.</p>
     </footer>
 
     <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+    <div class="wa-widget" id="wa-widget">
+        <div class="wa-widget__panel" id="wa-panel" role="dialog" aria-labelledby="wa-panel-title" hidden>
+            <div class="wa-widget__head">
+                <span class="wa-widget__avatar" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                <div>
+                    <p class="wa-widget__title" id="wa-panel-title">TIYISELANI RABOPAPE</p>
+                    <p class="wa-widget__sub">Quinton Tutorials on WhatsApp</p>
+                </div>
+                <button class="wa-widget__close" id="wa-close" type="button" aria-label="Close WhatsApp panel"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <p class="wa-widget__bubble">Hi! Ask me about tutoring, projects or opportunities.</p>
+            <a class="btn btn--whatsapp wa-widget__start" id="wa-start" href="https://wa.me/27636263341?text=Hello%20Queenton%2C%20I%20am%20interested%20in%20your%20Quinton%20Tutorials.%20Please%20share%20more%20information." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Start chat<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </div>
+        <span class="wa-widget__tooltip" id="wa-tooltip" aria-hidden="true">Chat with QuINTON</span>
+        <button class="wa-widget__toggle" id="wa-toggle" type="button" aria-expanded="false" aria-controls="wa-panel" aria-label="Chat with Queenton on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></button>
+    </div>
 
     <script src="script.js"></script>
 </body>
